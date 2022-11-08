@@ -6,11 +6,8 @@ public class Author {
         this.nameAuthor = nameAuthor;
         this.surnameAuthor = surnameAuthor;
     }
-    public String getAuthor() {
-       return nameAuthor + " " + surnameAuthor;
-    }
-    //public String toString() {
-       //return "Автор " + nameAuthor + " " + surnameAuthor;
-    //}
+    public String toString() {return  nameAuthor + " " + surnameAuthor;}
+    public String getNameAuthor() {return nameAuthor;}
+    public String getSurnameAuthor() {return surnameAuthor;}
 }
 
