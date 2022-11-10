@@ -10,11 +10,6 @@ public class Book {
         this.author = author;
         this.publisherYear = publisherYear;
     }
-
-    public String toString() {
-        return bookName + " " + author + " " + publisherYear;
-    }
-
     public String getBookName() {
         return this.bookName;
     }
@@ -31,6 +26,9 @@ public class Book {
         this.publisherYear = publisherYear;
     }
 
+    public String toString() {
+        return bookName + " " + author + " " + publisherYear;
+    }
     public boolean equals(Object other) {
         if (this == other) {
             return true;

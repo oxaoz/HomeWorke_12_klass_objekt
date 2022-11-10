@@ -7,10 +7,11 @@ public class Author {
         this.nameAuthor = nameAuthor;
         this.surnameAuthor = surnameAuthor;
     }
-    public String toString() {return  nameAuthor + " " + surnameAuthor;}
     public String getNameAuthor() {return nameAuthor;}
     public String getSurnameAuthor() {return surnameAuthor;}
-
+    @Override
+    public String toString() {return  nameAuthor + " " + surnameAuthor;}
+    @Override
     public boolean equals(Object other) {
         if (other == null || this.getClass() != other.getClass()) {
             return false;
@@ -21,7 +22,6 @@ public class Author {
         Author iTurgenev = (Author) other;
         return nameAuthor.equals(iTurgenev.nameAuthor) && surnameAuthor.equals(iTurgenev.surnameAuthor);
     }
-
     @Override
     public int hashCode() {return java.util.Objects.hash(nameAuthor, surnameAuthor);}
 }
